@@ -3,9 +3,126 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Esto es un titlulo del head</title>
+    <style>
+    	p {
+    		background: whitesmoke;
+    	}
+    </style>
+</head>
+
+<!-- 
+
+no es un lenguaje de programacion propiamente dicho sino que es un lenguaje de markup, incorporan al texto marcas o etiquetas que luego son interpretadas para darle informacion extra sobre la extructura al texto
+
+HTML es Hyper Text Markup Lenguage
+
+<elemento></elemento>
+<elemento atributo="">/elemento>
+
+tags:
+<html>
+<title></title>
+<body>
+<p>
+<span> contenedor de texto pero que no inserta nueva linea como lo hace el elemento <p>
+<div> contenedor generico que se usa generalmente para dar estilo
+<a> anchor, permite crear links... <a href="www.link.com">esto es un link!</a>
+<h1>..<h6>
+<img src="">
+<ul> unordered list esta disenado para contener archivos tipo intem
+<li> item de lista sin ordenar
+<ol> item de lista ordenados / numerados
+
+CSS Cascading Style Sheets
+
+una regla css esta compuesta por un atributo o porpiedad y un valor
+
+color:red
+propiedad:valor
+
+formas de dar estilo, donde se almacenan los estilos
+agregando el tagn <style/> en el tag <head> ejemplo
+	
+	<htm>
+		<head>
+		  <style>
+
+		    aca van las reglas de estilo
+
+		  </style>
+		</head>
+    </html>
+
+agregando tag <link/> ejemplo
+
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+
 	<title></title>
 </head>
 <body>
-
 </body>
+</html>
+
+para poder aplicar las reglas de estilo a los elementos html necesitamos selecionar los elementos que deseamos aplicar
+
+una forma es usar un selector de tipo (ejemplo con los <img> o los <p>)
+
+otra es con id y class..
+
+<div id="divid"> </div>
+son nombre que solo pueden aparecer una sola vez en el documento
+
+<div class="divclass"> </div>
+pueden ser mas de un elemento
+
+selectores absicos
+- de tipo: selecicona todos los elementos que cooinciden con el nombre del elemento especifico
+ejemplo <input>
+- de clase
+- de id
+- universal: se aplica a todos los elementos
+
+anatomia de las reglas de estilo
+
+<style>
+	body {}
+	.divclass {}
+	#div id{}
+</style>
+
+box model
+
+https://prep.soyhenry.com/_src/assets/08-HTML/boxModel.png
+
+div {
+	border: 1px solid black;
+}
+
+otras propiedades css
+
+background
+color
+font-size
+
+!-->
+<body>
+	<h1>Esto es un titlulo del body</h1>
+	<p>Esto es un parrafo</p>
+	<ul>
+		<li>Item lista uno</li>
+	    <li>Item lista dos</li>
+	</ul>
+	<img src="https://prep.soyhenry.com/_src/assets/08-HTML/boxModel.png
+">
+</body>
+<footer>
+	<p>Esto es un parrafo del footer</p>
+</footer>
 </html>
