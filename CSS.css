@@ -1,0 +1,56 @@
+/*
+Propiedad display
+
+es importante para el posicionamiento en css la usamos para controlar como se muestra el contenido en los elementos que estan alrededor de este y como se comportan en la pantallas
+
+div {
+    display: <valor de la propiedad;
+}
+
+elementos block
+arranca en nueva linea y siempre tomara el ancho que se le de en el contenedor
+div p
+
+elementos inline
+solo tomare el espacio que necesite
+span a img
+
+none es que no deja rastro
+y hidden es cuando deja el lugar pero no se ve nada
+visibility: hidden;
+
+flex 
+grid 
+
+la propiedad position
+
+div {
+    position: <valor de la propiedad>;
+}
+
+static
+como su nombre lo dice, estatico, nada lo afecta ni aun asi le coloque propiedades con top left etc
+
+relative
+se mantendra como si fuese static pero nos permitira usar otros metodos de posicionamiento de elementos
+
+fixed
+definir un objeto fijo pero en la pantalla, se quedara ahi aun asi scroleemos
+
+absolute
+similar a static/relative solo que se mantiene estatico dependiendo de su contenedor
+
+abrolute                  relative
+desde posicion padre      desde contenedor
+
+propiedades de position
+
+top, left, rigth u bottom
+
+div {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*
