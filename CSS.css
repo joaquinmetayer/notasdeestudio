@@ -17,6 +17,7 @@ span a img
 
 none es que no deja rastro
 y hidden es cuando deja el lugar pero no se ve nada
+display: none;
 visibility: hidden;
 
 flex 
