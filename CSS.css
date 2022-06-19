@@ -54,4 +54,48 @@ div {
     left: 0;
 }
 
+flexbox
+
+aspectos basicos:
+
+display: flex e inline-flex
+esto hace que elemento sea "flex block"
+
+justufy content:   y  align items
+alineacion en fila / alineacion en columna
+sus tipos...
+
+center
+
+flex-start, se mostraran los elementos al comienzo del elemento
+
+flex-end, al final
+
+space-between, agrega espacio de forma uniforme entre los elementos pero no coloca espaco "afuera"
+
+space-arround, similar a space between pero aplic atambien margenes afuera, o sea en todos lsdos de forma uniforme en su contenedor
+
+
+flex direction
+
+row
+es la ubicacion por defecto
+
+column
+esto pone todo en columna
+
+row-reverse 
+espejea / invierte la direccion de JC (justify-content) de derecha a izquierda
+
+colum-reverse
+invierte AI (align-items) de abajo hacia arriba
+
+
+align-seflr
+me permite alinear un solo elemento
+
+
+recursos adicionales
+https://flexboxfroggy.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 /*
