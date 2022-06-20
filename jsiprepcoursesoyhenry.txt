@@ -1,0 +1,106 @@
+Javascript I
+
+Introduction a javascript
+
+Variables
+
+Es una horma de almacenar valor para algo que usaremos luego
+Tres formas de declararla
+
+- var : es la palabra mas genérica de declarar una variable 
+
+- let : similar a var pero crea un nivel de scope, o sea que esa variable solo se usa para un bloque de función y no se puede usar en otro, tipo "interna"
+
+- const : constante, esta no se podrá cambiar
+
+
+
+Console.log(); 
+Metodo simple qu enos permite imprimir  en la consola todo lo que pongamos en paréntesis
+
+Imperativo significa paso por paso
+Js es key sensitive (que afecta mayúscula y minuscule)
+
+
+
+Tipos de datos:
+
+Strings:
+Es un objeto que se utiliza para representar una secuencia de caracteres, en otras palabras texto.
+Estos se envuelven en comillas.
+
+Numbers:
+Numeros, no se envuelven en comillas
+
+Boolean:
+True o false
+
+
+Operadores:
++, -, / y *
+
+Precedencia de operadores y asociatividad
+
+Precedencia es el orden en que se van a llamar la función de los operadores, las que tienen mayor orden d precedencia son las que se llamaran primero
+
+La asociatividad es el orden en que se ejecutan los operadores cuando tienen la misma precedencia, es decir de izquierda a derecha o al revés
+
+Precedencia aqui https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
+
+Non-lazy evaluation es cuando los argumentos son evaluados primeros
+
+Operadores math + - * / =
+
+Si uso el % dividida los dos numero en un numero redondo y devolver el resto
+
+
+
+Operadores globales y metodos
+
+
+Matth.pow para devolver un numero elevado a un exponente
+
+Math.round redondear
+Math.floor redondear para abajo
+Math.ceil redondear para arriba
+
+.legth 
+El tipo de datos string tiene un incorporado que es .legth, cualquier cadena que llamemos esto nos devolver la cantidad de caracteres de la cadena
+
+
+
+Funciones
+
+Son tipos particulares de objetos llamados callable objects u objetos invocables 
+Ahora que tenemos un conjunto de variables, necesitamos funciones para cambiarlas, hacer algo con ellas
+
+Function mifunction() {}
+Var otrafuncion = function () {}
+
+Anatomía de una función
+
+Function mi function() {
+    console.log('hola');
+}
+Loghola();
+
+Argumentos
+
+Son un objeto que se escribe dentro de las funciones conteniendo en el un valor para utilizar en la respectiva función.
+
+Return
+Cuando usamos return no usaremos console.log ya que lo remplaza
+
+
+
+Control de flujo de operadores o
+Declaraciones if 
+
+Es una estructura que se usa para tomar decisiones. Similar a la formula si que usamos en excel.
+Si esto es verdadero realiza acción a, si esto es falso realiza acción b.
+
+-------
+
+Homwork notes
+
+

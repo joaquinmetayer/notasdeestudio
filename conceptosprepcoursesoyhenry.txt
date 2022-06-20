@@ -16,7 +16,8 @@ Una regla fácil para distinguir entre una *expression* y un *statement* en JS e
 - Una **expression** siempre se convierte (retorna) un valor.
 - Un **statement** realiza una acción.
 
-## Expresiones con efectos secundarios (side effects)
+
+Expresiones con efectos secundarios (side effects)
 
 Son expresiones que al ser evaluadas retornan algo, pero a su vez tienen *un efecto secundario* (incrementar un valor, etc...). Por ejemplo:
 
@@ -31,7 +32,8 @@ Primarias
 Assignation cuando le asignamos un valor con el signo =
 Side effects
 
-Conditional statement if when use a formule if for calculate
+Conditional statement
+cuando se usa una formula para calcular
 
 Statement declaration
 Utiliza función y var
@@ -68,6 +70,7 @@ Var prueba; // declaro variable prueba
 Function suma(a, b); { // declaro la función suma;
 //bloque de codigo;
 }
+
 - Function expressions vs function declarations
 Cuando declaramos una función el interprete puede interpretarla como un statement o como una expresión, dependiendo del contexto
 El interprete hace algo: declara una función, por lo tanto es un statement, en cambio la asignación espera una expresión en la parte de la derecha, así que estamos pasando un function expression.
