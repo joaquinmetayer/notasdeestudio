@@ -1,0 +1,125 @@
+Null es cuando ele elemento que se esta buscando si existe pero no se le ha asignado ningún valor
+Undefined es cuando buscas algo que no existe
+
+Veracidad son datos que son forzados a true o false
+
+[] un array
+{} un objeto
+
+Operadores de compariacion
+
+
+si el comparador es verdadero imprimira por defecto verdadero
+ de o contrario sera falso… ej
+1 > 2; // false
+
+Un solo igual = es asignar un valor a una variable
+Triple igual === comparara solo dos elementos
+Doble igual == no se considera como mala practica
+
+! / NOT
+!== no es igual a
+
+Flujos de control
+If / if else / else
+
+Operadores lógicos
+
+&& este evaluara ambas expresiones y si las dos variables son verdaderas devolver true
+If (10 > 2 && 9 < 10) {
+              Console.log  (‘ambas declaraciones son ciertas, el código se ejectara’)
+              }
+
+II devolverá true si una o ambas de las expresiones es true, devuelve false si ambas expresiones son false
+
+! NOT el operador devolver lo contrario de lo que esta pasando ej… si la función es true, pero le agrego el ! Devolvera false…
+
+
+Flujos de control
+
+If () {
+Return
+} 
+Else {
+}
+
+Si coloco if e if else
+Primero se ejecuta if si es true, si es false ejecuta if else
+
+Si coloco if / if else / else
+Primero se ejecutara if, si es false continuara con if else, y si es false también terminara ejecutando else de todas formas sin importar que
+
+
+
+Bucles for (similar al if pero mas complejo)
+
+Primero tenemos una palabra clave for, sguida de paréntesis que llevan dentro tres cosas 
+La primera debemos aclara una variable, esto es lo que se repetirá en bucle, entonces tendremos una expresión condicional, el ciclo continuara sucediendo hasta que esta declaración sea false, tercero incrementaremos nuestra variable. Las tres declaraciones son separadas por un punto y coma
+
+For ( let = I ; I < 10; I++) {
+Console.log(I);
+}
+
+El operador ++ significa “establecer el valor de la variable a su valor actual mas uno”
+
+Bucles infinitos
+Se finalizan hasta que se genera un atasco,o el programa sea interrumpido
+
+
+Swich 
+
+switch (expr) {
+  case 'Naranjas':
+    console.log('El kilogramo de naranjas cuesta $0.59.');
+    break;
+  case 'Manzanas':
+    console.log('El kilogramo de manzanas cuesta $0.32.');
+    break;
+  case 'Platanos':
+    console.log('El kilogramo de platanos cuesta $0.48.');
+    break;
+  case 'Cerezas':
+    console.log('El kilogramo de cerezas cuesta $3.00.');
+    break;
+  case 'Mangos':
+  case 'Papayas':
+    console.log('El kilogramo de mangos y papayas cuesta $2.79.');
+    break;
+  default:
+    console.log('Lo lamentamos, por el momento no disponemos de ' + expr + '.');
+}
+
+console.log("¿Hay algo más que te quisiera consultar?");
+
+Si no tengo brake, cuando acierte en la lista ejecutara todos los que le siguen abajo de ese 
+El switch se usa cuando tengo muchos if… para hacerlo mas simple y optimo
+
+
+
+Do while
+
+Primero ejecuta el codigo que se encuentra en do y luego con el while controla si es true o false para ver si continua ejecutando el codigo
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 5);
+
+console.log(result);
+// expected result: "12345"
+
+
+------
+Homework
+
+Bucle for
+
+Similar al if pero mas complejo
+For (inicialización, condición, actualizacion)
+Similar al bucle while / do while
+
+&& este evaluara ambas expresiones y si las dos variables son verdaderas devolver true
+
+II devolverá true si una o ambas de las expresiones es true, devuelve false si ambas expresiones son false
+
+! NOT el operador devolver lo contrario de lo que esta pasando ej… si la función es true, pero le agrego el ! Devolvera false…
