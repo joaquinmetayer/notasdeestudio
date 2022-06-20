@@ -41,7 +41,7 @@ definir un objeto fijo pero en la pantalla, se quedara ahi aun asi scroleemos
 absolute
 similar a static/relative solo que se mantiene estatico dependiendo de su contenedor
 
-abrolute                  relative
+absolute                  relative
 desde posicion padre      desde contenedor
 
 propiedades de position
@@ -94,6 +94,10 @@ invierte AI (align-items) de abajo hacia arriba
 align-seflr
 me permite alinear un solo elemento
 
+
+propiedad order
+order: -1
+se usa para mover el elemto eleccionado a donde yo quiera en sentido de orden respacto a los que los rodea
 
 recursos adicionales
 https://flexboxfroggy.com/

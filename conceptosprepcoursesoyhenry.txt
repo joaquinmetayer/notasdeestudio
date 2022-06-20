@@ -1,0 +1,108 @@
+Expresiones vs statements
+
+Expresiones podemos verlas como palabras
+
+Expresiones primarias (porque con la simple palabra ya estamos generando una expresión / variable / valor/ con el mismo valor que tienen) - cualquier valor primitivo:
+Texto
+123
+True false
+Null
+Undefined
+Symbol (‘foo’)
+3211123424
+
+Una regla fácil para distinguir entre una *expression* y un *statement* en JS es la siguiente:
+  Si podemos ponerlo dentro de un `console.log`, es una *expression*, si no, es un *statement*.
+- Una **expression** siempre se convierte (retorna) un valor.
+- Un **statement** realiza una acción.
+
+## Expresiones con efectos secundarios (side effects)
+
+Son expresiones que al ser evaluadas retornan algo, pero a su vez tienen *un efecto secundario* (incrementar un valor, etc...). Por ejemplo:
+
+contador++; // retorna el valor de contador e incrementa uno.
+++contador; // incrementa el valor de contador y retorna el valor;
+
+
+Expresiones arimetricas son los números
+Strings las que contienen texto
+Logicas que recuelven un bolaneo ej 10>1
+Primarias
+Assignation cuando le asignamos un valor con el signo =
+Side effects
+
+Conditional statement if when use a formule if for calculate
+
+Statement declaration
+Utiliza función y var
+
+
+—————————————————
+
+
+Una expression siempre se convierte (retorna) un valor
+Un statement realiza una acción
+
+En console.log solo funcionan las expresiones
+
+Expressions
+
+Expressions aritméticas: valor numérico
+Expressions de strings: texto con ‘
+Expressions logical: booleano (10 > 9, 11 +++ 2, false)
+Expressions primaries: string, numerical, booleano, keywords
+Expressions de asignación: cuando utilizamos el operador = (!= a ===)
+Expressions with secondary effects (side effects); que al ser evaluadas retornan a algo, pero a su vez tienen un efecto secundario (incrementar un valor, etc) ej: contador++ o ++contador
+
+Statements
+
+Son instrucciones que le damos al interprete JS para que haga algo
+
+- Delcaration statements: indica que declare variables o funciones, se utiliza keywork function y var.
+Ej:
+Var prueba; // declaro variable prueba
+Function suma(a, b); { // declaro la función suma;
+//bloque de codigo;
+}
+- Function expressions vs function declarations
+Cuando declaramos una función el interprete puede interpretarla como un statement o como una expresión, dependiendo del contexto
+El interprete hace algo: declara una función, por lo tanto es un statement, en cambio la asignación espera una expresión en la parte de la derecha, así que estamos pasando un function expression.
+
+- Conditional statements
+If (condition) { // condition que puede ser cualquier expresión, ejecuta este bloque si es true;
+}
+Else if (condition 2) { // si es false condition 1 y condition 2 es true ejecuta este bloque;
+}
+Else { // si las dos anteriores conditions son false ejecuta este bloque;
+}
+
+- Loops (bucles y Jumps (saltos)
+Hacen que un bloque se ejecute N veces (for) o que la ejecución salte a otro contexto (return)
+ - while(condition) { // condition es una expresión;
+                                // ejecuta este bloque mientras la condición sea true;
+}
+ - For  (var i + 1; I < 10; I++) {
+        // ejecuta este bloque de codigo nueve veces;
+}
+ - function () {
+// bloque de codigo;
+Return; // cuando llegue acá, sale de la ejecución de la función y retorna un valor;
+// bloque de codigo;
+}
+ - for (var I + 1; I < 10: I++) {
+// ejecuta este bloque de codigo N veces;
+Continue; // salta a la siguiente iteración del bucle;
+// desde caca nos ejecuta;
+}
+
+Expresion statements
+En donde el interprete espeta un statement, nosotros podemos pasarle una expresión, esto se llama expression statement
+
+La variable definida let es una en la que no puede ser redeclarada
+A las expresiones las podemos ver como palabras y a las sentencias como oraciones
+La variable iteradora es la famosa i
+
+Un array es un objeto de tipo lista de alto nivel
+Un objeto siempre tiene clave y valor, que los valores son expresiones( ej nombre: ‘joaquin’;)
+Expresion es una unidad de codigo que produce un valor
+Expresion de función, usamos las expresiones para colocar una formula, su palabra lo dice… expresa una función
