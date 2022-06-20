@@ -1,0 +1,9 @@
+Ls muestra donde estoy parado
+Tab para autocompletar
+Cd <nombre de carpeta> para ir a ella
+Cd .. para salirme del directorio y volver una carpeta atrás 
+Pwd puedo ver las rutas
+Mv move
+Mkdir para crear carpeta
+Touch para crear archivo
+Rm para remover archivo

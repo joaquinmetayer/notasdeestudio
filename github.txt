@@ -1,136 +1,141 @@
-
-
-
-
-
 Git
 
+Es un sistema de control de versiones que registra los cambios realizados en un archivo o un conjunto de archivos a lo largo del tiempo, de modo que las puedas recuperar mas adelante.
+Version control system (VCS)
 
+Tipos de sistemas de versionado:
 
+1- locales
+El mas sencillo el cual funciona mejor en trabajos solos y no en equipo
 
+2- centralizados
+Tiene una rama central llamada VCS Server y en cada computadora en que se trabaje se descarga todos loas archivos versionados pero desde lugar central
+Tiene la ventaja de que todos puede saber en que están trabajando los demás colaboradores
+Pero la desventaja es de que hay un punto único de fallo, si el server cae? Nadie puede seguir trabajando en ellos
 
-Terminal
-ls me muestra donde estoy parado
+3- distribuidos
+Ahi es donde ingresan los sistemas de control de versiones distribuidos (DVCs)
+Donde los clientes se descargan completamente la ultima version del repositorio 
 
-- **committed**: significa que los datos están almacenados de manera segura en tu base de datos local.
-- **modified**: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.
-- **staged**: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
+Estados de archivos:
 
-"List": Nos permite ver el contenido de la carpeta donde nos encontramos.
-  $ ls
-"Change Directory": Nos permite movernos a una nueva carpeta o "directorio"
-  $ cd [carpeta]
-"Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
-  $ mkdir [nombre de la carpeta]
-"Touch" creará un nuevo archivo.
-  $ touch [nombre del archivo]
-  $ rm [nombre del archivo]
+- committed: significa que los datos están almacenados de manera segura en tu base de datos local.
+- modified: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.
+- staged: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
 
-/ Agregar todos los archivos para que esté pendiente de los cambios
+Comandos en terminal
+
 git add .
+Agregar todos los archivos para que esté pendiente de los cambios esta es etapa de stage
 
-// Muestra la lista de commit del mas reciente al más antigüo
 git log --oneline
+ Muestra la lista de commit del mas reciente al más antigüo
 
-Git ignore, creo un doc .gitignore y ahi escribo el nombre de los archivos que no quiero que se suba al repositorio
+Git commit -m""
+Para confirmar mis archivos listos para ser pusheados luego
 
-Checkout es para ver y revisar lo que hicimos en SHA-1
+Checkout
+para ver y revisar lo que hicimos en SHA-1
+
 Git -h (help para ver un resumen de todo lo que puedo hacer)
-Tab para autocompletar
-cd .. para salirme del directorio y volver una carpeta atrás 
+
+Git Push 
+es para enviar
+
+Git Pull 
+para recibir
+
+git init
+se utiliza para iniciar nuestro repositorio.
 
 Cuando vemos el directorio .git, que tenga el punto significa que esta oculto para que podamos verlo desde el directorio
 La carpeta .git siempre se es ignorada
  
-Cuando usamos git addd es cuando lo pasamos a estapa de stage
 Rm para eliminar
 Git diff para ver las diferencias 
-
-Pwd puedo ver las rutas
-Mv move
-Mkdir para crear carpeta
 
 Git status
 para ver el estado del repositorio si esta actualizado o no en el git de internet
 Si sale en rojo es porque no esta actualizado
 Para agregarlo escribo git add + el link que me da la terminal del archivo
-Git commit -m “ comentario”
 
-Kernel significa nucleo
+Git clone + link para clonar repositorio 
 
-Como es una interfaz de usuario, tipos
-CLI Comand line interface
-GUI Graphical user interface
-NUI native user interface
+Git ignore
+Creo un doc .gitignore y ahi escribo el nombre de los archivos que no quiero que se suba al repositorio
 
-Hacer un commit es cuando guardo todos mis cambios en git
-Push es para enviar
-Pull para recibir
+git reset HEAD
+nos ayuda a sacar los archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venian de Unstaged, vuelven alli. Y lo mismo si venian de Untracked.
 
+git branch "nombre de rama"
+crea una rama
 
+git checkout "nombre de la rama"
+Cabiarse de rama
 
+Git merge "cualquier otra rama"
+Crea un nuevo commit con la combinación de dos ramas, la que nos encontramos y la rama que le pasamos después del comando
 
+**NOTA: Hacer commit antes de cambiar de ramas para no perder los datos.
 
+Git push origin "nombre de la rama"
+Publicamos una rama local al repositorio remoto
 
+git show
+nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
+
+git diff
+nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).
+
+git checkout + Id del commit
+podemos volver a cualquier versión anterior de un archivo específico o incluso de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
+
+git log --stat
+commit descriptivo con cantidad de líneas agregadas y removidas por archivo.
+
+git log
+muestra la identificación de los commits.
+
+git reset --soft 'commit'
+mantiene los archivos en el área de Staging para que podamos aplicar nuestros últimos cambios desde un commit anterior.
+
+git reset --hard 'commit'
+borra toda la información que tengamos en el área de Staging. (Perdiendo todo para siempre).
+
+git checkout master 'archivo.txt'
+volvemos a la versión madre.
+
+git rm: este comando necesita algunos de los argumentos para poder ejecutarse correctamente:
+
+git rm --cached: Mueve los archivos que le indiquemos al estado Untracked.
+git rm --force: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
 GitHub
 
-
-
-- `git init`: se utiliza para iniciar nuestro repositorio.
-- `git add ArchivoEjemplo.js`: crea el archivo pero no lo guarda de forma definitiva, lo almacena en (Staging Area).
-- `git commit -m "versión 1"`: aquí se generan cambios de "Staging Area" y con ( -m "") se deja un mensaje que nos sea útil.
-- `git add .`: Agrega los archivos actualizados al repositorio, pero únicamente en la carpeta que te encuentras.
-- `git commit -m "Cambios v1"`: sirve para generar cambios sobre la versión antigua.
-- `git status`: sirve para revisar si has modificado o guardado los cambios hechos.
-- `git log "archivo.txt"`: sirve para ver el historial del archivo.
-- `git push`: sirve para enviar cambios al repositorio remoto.
-- `git pull`: sirve para recibir cambios de repositorio remoto a local.
+Es un repositorio en donde se almacenan archivos de forma remota para usar el sistema de control de versiones que es git
 
 Archivos git 
-Tracked dentro de git, no tienen cambios pendientes y las act han sido guardadas gracias al add y commit
-Staged en git pero no se guardaron los últimos cambios con commit
-Unstated dentro de git pero no fue afectado por add ni mucho menos commit
-Untracked son archivos que no viven dentro de git
 
-- `git status`: nos permite ver el estado de todos nuestros archivos y carpetas.
+Tracked dentro de git
+no tienen cambios pendientes y las act han sido guardadas gracias al add y commit
 
-- `git add`: nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre del archivo o carpeta para añadir archivos y carpetas individuales o git add -a para mover todos los archivos de nuestro proyecto ( tanto Untrackeds como Unstageds).
+Staged
+en git pero no se guardaron los últimos cambios con commit
 
-- `git reset HEAD`: nos ayuda a sacar los archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venian de Unstaged, vuelven alli. Y lo mismo si venian de Untracked.
+Unstated
+dentro de git pero no fue afectado por add ni mucho menos commit
 
-- `git commit`: nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedira que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento -m para describirlo ( git commit -m "mensaje").
+Untracked
+son archivos que no viven dentro de git
 
-- `git rm`: este comando necesita algunos de los argumentos para poder ejecutarse correctamente:
 
-- `git rm --cached`: Mueve los archivos que le indiquemos al estado Untracked.
-- `git rm --force`: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
-
-- Rama ***Master*** o ***Main***: va a producción.
-- Rama ***Development***: se alojan las nuevas features, características y experimentos
+Rama Master o Main: va a producción.
+Rama Development: se alojan las nuevas features, características y experimentos
      (para unirse al Máster cuando estén definitivamente listas).
-- Rama ***Hotfix***: issues o errores se solucionan aquí para unirse al Master tan pronto sea posible.
+Rama Hotfix: issues o errores se solucionan aquí para unirse al Master tan pronto sea posible.
 
-
-- `git log`: muestra la identificación de los commits.
-- `git show`: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
-- `git diff`: nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).
-
-- `git checkout + Id del commit`: podemos volver a cualquier versión anterior de un archivo específico o incluso
-  de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
-
-- `git log --stat`: commit descriptivo con cantidad de líneas agregadas y removidas por archivo.
-
-- `git reset --soft 'commit'`: mantiene los archivos en el área de Staging para que podamos aplicar nuestros últimos cambios desde un commit anterior.
-
-- `git reset --hard 'commit'`: borra toda la información que tengamos en el área de Staging. (Perdiendo todo para siempre).
-
-- `git checkout master 'archivo.txt'`: volvemos a la versión madre.
 
 Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
-git branch "nombre de rama" // crea una rama
-git checkout "nombre de la rama" // cambiarse de rama
 
-**NOTA**: Hacer commit antes de cambiar de ramas para no perder los datos.
 

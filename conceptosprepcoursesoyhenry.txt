@@ -36,6 +36,10 @@ Conditional statement if when use a formule if for calculate
 Statement declaration
 Utiliza función y var
 
+Como es una interfaz de usuario, tipos
+CLI Comand line interface
+GUI Graphical user interface
+NUI native user interface
 
 —————————————————
 
