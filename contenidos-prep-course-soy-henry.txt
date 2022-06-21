@@ -1,0 +1,89 @@
+HTML
+CSS
+
+EXPRESIONES
+
+Aritméticas
+Strings
+Logicas
+Primarias
+De assignation
+Con efectos secundarios
+Statements
+Declaration statements
+Condicional statements
+Loops / bucles
+Jump / saltos
+Expresión statements
+
+JAVASCRIPT
+
+JS I
+
+Variables:
+Let
+Var
+Const
+
+Tipos de datos:
+Strings
+Numbers
+Boolean
+
+Operadores
+Precedencia de operadores y asociatividad
+Math
+Objetos globales y metodos
+
+Funciones:
+Anatomia
+Arguments
+Declaration return y scope
+
+Control de flujo y operadores de comparación
+
+JS II
+
+Undefined y null
+Veracidad
+Operadores de comparación (continuación)
+Flujos de control
+
+Operadores lógicos:
+&&
+II
+!
+
+Bucles for:
+El operador ++
+Bucle infinito
+While y do while
+
+Argumentos
+
+JS III
+
+Arrays 
+.letgh
+Accedo a elementos de una matriz
+Assignation
+.push .pop
+.unshift .shift
+Notas sobre las matrices
+
+JS IV
+
+Introduction a objetos:
+Pares clave: valor (key:value)
+Acceder a los valores
+Assignation de valores
+
+Eliminando propiedades
+Metodos
+Bucles for… in
+
+Parable clave this:
+This y el execution context
+
+Objetos en javascript
+
