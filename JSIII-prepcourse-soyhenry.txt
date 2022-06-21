@@ -23,6 +23,7 @@ Si uso el -1 accedo al ultimo elemento
 Console.log(nombreEstudiantes[-1];
 //'Pepe'
 
+return array[array.length - 1];
 
 
 Assignation
@@ -64,5 +65,19 @@ Console.log(nombreEstudiantes[i];
 // 'Joaquin'
 // 'Juan'
 // 'Pepe'
+
+
+
+.chartAt()
+
+Este método retorna un string especifico en la posición que le indique 
+
+Ej
+String = 'Hola';
+String.chartAt(0);
+// H
+
+
+Statement break / continue
 
 
