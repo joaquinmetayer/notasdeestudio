@@ -1,4 +1,4 @@
-Null es cuando ele elemento que se esta buscando si existe pero no se le ha asignado ningún valor
+Null es cuando el elemento que se esta buscando si existe pero no se le ha asignado ningún valor
 Undefined es cuando buscas algo que no existe
 
 Veracidad son datos que son forzados a true o false
@@ -137,3 +137,55 @@ Similar al bucle while / do while
 II devolverá true si una o ambas de las expresiones es true, devuelve false si ambas expresiones son false
 
 ! NOT el operador devolver lo contrario de lo que esta pasando ej… si la función es true, pero le agrego el ! Devolvera false…
+
+
+function colors(color) {
+  //La función recibe un color. Devolver el string correspondiente:
+  //En caso que el color recibido sea "blue", devuleve --> "This is blue"
+  //En caso que el color recibido sea "red", devuleve --> "This is red"
+  //En caso que el color recibido sea "green", devuleve --> "This is green"
+  //En caso que el color recibido sea "orange", devuleve --> "This is orange"
+  //Caso default: devuelve --> "Color not found"
+  //Usar el statement Switch.
+  switch(color) {
+    case "blue":
+      return "This is blue";
+    case "red": 
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
+    default: 
+    return "Color not found";
+  }
+}
+
+function esDiezOCinco(numero) {
+  // Devuelve "true" si "numero" es 10 o 5
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  return numero === 10 || numero === 5;
+}
+
+  function esEntero(numero) {
+    // Devuelve "true" si "numero" es un entero (int/integer)
+    // De lo contrario, devuelve "false"
+    // Tu código:
+    return numero % 1 === 0;
+  }
+  
+  function doWhile(numero) {
+    //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+    //Retornar el valor final.
+    //Usar el bucle do ... while.
+    var a = numero;
+    var i = 0;
+    do {
+      i = i + 1;
+      a = a + 5;
+    }
+    while(i < 8);
+    return a;
+  }
+  

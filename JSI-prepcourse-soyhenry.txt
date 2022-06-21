@@ -64,8 +64,8 @@ Math.round redondear
 Math.floor redondear para abajo
 Math.ceil redondear para arriba
 
-.legth 
-El tipo de datos string tiene un incorporado que es .legth, cualquier cadena que llamemos esto nos devolver la cantidad de caracteres de la cadena
+.length 
+El tipo de datos string tiene un incorporado que es .length, cualquier cadena que llamemos esto nos devolver la cantidad de caracteres de la cadena
 
 
 
@@ -103,4 +103,22 @@ Si esto es verdadero realiza acción a, si esto es falso realiza acción b.
 
 Homwork notes
 
+function elevarAlCuadrado(num) {
+  // Devuelve el valor de "num" elevado al cuadrado
+  // ojo: No es raiz cuadrada!
+  // Tu código:
+  return Math.pow(num, 2);
+}
+
+function elevarAlCubo(num) {
+  // Devuelve el valor de "num" elevado al cubo
+  // Tu código:
+  return num * num * num;
+}
+
+function elevar(num, exponent) {
+  // Devuelve el valor de "num" elevado al exponente dado en "exponent"
+  // Tu código:
+  return Math.pow(num, exponent);
+}
 
