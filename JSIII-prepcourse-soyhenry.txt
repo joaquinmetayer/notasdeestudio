@@ -1,0 +1,68 @@
+Arrays (matrices/arreglos)
+
+Array lo podemos ver como un lugar en donde almacenar una o mas variables dentro de un mismo lugar
+
+Usamos las []
+Const nombreEstudiantes = ['Martin', 'Juan', 'Pepe']
+
+Si uso el string .legth me arroja la cantidad de elementos que contiene el array
+
+Console.log(nombreEstudiantes.legth); 
+//3
+
+
+Acceso a elementos de una matriz
+
+Cada elemento es enumerado a partir del 0
+
+Console.log(nombreEstudiantes[1];
+//'Juan'
+
+Si uso el -1 accedo al ultimo elemento
+
+Console.log(nombreEstudiantes[-1];
+//'Pepe'
+
+
+
+Assignation
+
+Podemos asignar y resignar cualquier indicio en la matriz usando paréntesis/indice y un =
+
+nombreEstudiantes[0] = 'Joaquin';
+
+console.log(nombreEstudiantes);
+// ['Joaquin', 'Juan', 'Pepe']
+
+
+
+.push y .pop
+
+Push agrega al final
+Pop quita al final
+
+.unshift y .shift
+
+Unshift agrega al principio
+Shif eleminia al principio
+
+nombreEstudiantes.shift();
+
+
+
+Puedo contener multiples tipos elementos dentro de una matriz
+
+
+Utilizando bucles for en arrays
+
+Const nombresEstudiantes = ['Joaquin', 'Juan', 'Pepe'];
+
+For (let I = 0; I < nombresEstudiantes.legth; i==) {
+Console.log(nombreEstudiantes[i];
+}
+
+// 'Joaquin'
+// 'Juan'
+// 'Pepe'
+
+
