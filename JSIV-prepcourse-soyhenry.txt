@@ -1,0 +1,150 @@
+Const nuevoObjeto = {};
+
+Key value
+Clave:valor
+
+Const user = {
+Username: 'Juan.perez',
+Password: 'loremsss',
+
+};
+
+
+Acceder a valores
+
+Similar a .length
+User.password; // loremsss
+
+
+Asignar valores
+Funciona similar que el acceder
+
+User.password = 'otracontrasena';
+
+
+Eliminar propiedades
+
+Delete objeto.propiedadaeliminar
+
+
+
+Metodos
+En los valores se pueden establecer funciones, las funciones guardadas en un objeto se denominan métodos
+
+Const nuevoObjeto = {
+  decirHola: function() {
+    Return 'Hola a todo el undo!';
+  }
+}
+
+nuevoObjeto.decirHola(); // Hola a todo el mundo!
+
+
+Bucle for... in loop
+Similar a bucle que se utiliza en arrays pero como cada variable que contiene el objeto son sin numero la función con arrays no funcionara
+
+
+
+El bucle for in me devuelve la posicion de cada elemento del array ( si es que tengo un array )
+
+Const = js [ 'hola', 'como', 'estas']
+
+For ( const leccion in js) {
+ Console.log(leccion);
+}
+
+//hola
+//como
+//estas
+
+Veamos otro ejemplo
+
+Const usuario = {
+Username: 'Juan.perez',
+Password: 'lorems',
+lovejs: true,
+Favor: 42,
+
+For (let clave in usuario) {
+  Console.log(clave);
+  Console.log(usuario[clave]);
+}
+
+// username
+// 'Juan.perez'
+// password
+// 'lorems'
+// lovejs
+// true
+// fav
+// 42
+
+
+
+El bucle for on me devuelve lo que contiene cada array, básicamente me replaza el uso del bucle for tradicional, aunque esto depende para que lo necesite...
+
+
+
+Un arreglo no es mas que un objeto pero con indices numéricos
+
+This lo puedo usar para invocar una variable que existe dentro de la lista de objetos, lo puedo usar cuando tengo que utilizar dos o mas objetos con la misma definición / variable 
+
+this.nombre
+
+
+
+
+------
+HOMEWORK
+
+Objeto
+Es unan variable que se utiliza para almacenar mas variables  
+
+Propiedades
+Nos referimos a las propiedades de un objeto definidas mediante un key value. Ejemplo:
+
+Const objeto = {
+  Key: 'value',
+}
+
+Console.log(objeto.key)
+// 'value'
+
+Metodos
+Son funciones que están asociadas al objeto (dentro del objeto)
+
+
+Bucle for in
+Me permite iterar entre las propiedades del objeto similar a como lo hacíamos con el bucle for en arrays pero hecho de una forma mas simple
+
+Ejemplo Const = js [ 'hola', 'como', 'estas']
+
+For ( const leccion in js) {
+ Console.log(leccion);
+}
+
+//hola
+//como
+//estas
+
+Veamos otro ejemplo
+
+Const usuario = {
+Username: 'Juan.perez',
+Password: 'lorems',
+lovejs: true,
+Favor: 42,
+
+For (let clave in usuario) {
+  Console.log(clave);
+  Console.log(usuario[clave]);
+}
+
+// username
+// 'Juan.perez'
+// password
+// 'lorems'
+// lovejs
+// true
+// fav
+// 42
