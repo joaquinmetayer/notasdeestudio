@@ -1,0 +1,35 @@
+Clases
+Son utiles para crear muchos objetos que comparten algunas de las mismas propiedades y métodos (como los usuarios de un sitio web)
+
+Class e instanciacion pseudo-clásica
+
+Utilizo la palabra new, es como si copiase las propiedades de otro objeto en uno nuevo
+
+Veamos un ejemplo
+
+Function Gato(nombre) {
+
+// el operador crea un objeto "this"
+
+This.nombre =nombre;
+This.maullar = function() {
+  Return 'Mi nombre es ' + this.nombre + ' ... Meow!';
+}
+
+// devuelve el objeto "this"
+
+}
+
+Const sam = new Gato('sam');
+Const kitty = new Gato('kitty');
+Console.log(sam.maullar()); // 'Mi nombre es sam ... Meow!
+
+
+
+This en las clases 
+La palabra clave this puede volverse confusa cuando comenzamos a usarla en clases. En el ultimo ejemplo usamos el método de los maullidos.
+Una buena regla general si no esta seguro de a que se refiere this, es observar donde se llama el método y el objeto a la izquierda del punto. Ese es el objeto al que se refiere this
+
+
+
+Prototype

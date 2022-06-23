@@ -87,3 +87,29 @@ This y el execution context
 
 Objetos en javascript
 
+JS V
+
+Clases
+Clases e instanciacion pseudo-clásica
+This en las clases
+
+Prototype
+Object.create
+Object.assign
+
+Herencia clásica
+
+Herencia en JavaScript
+Constructores anidados
+
+JS VI
+
+Callbacks
+
+Mas metodos de arrays
+.forEach
+.reduce
+.map
+
+
+
