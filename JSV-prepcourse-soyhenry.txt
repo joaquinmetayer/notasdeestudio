@@ -33,3 +33,96 @@ Una buena regla general si no esta seguro de a que se refiere this, es observar 
 
 
 Prototype
+Debido a que la creación de funciones es costosa en lo que nos referimos a capacidad de memoria RAM
+Las clases tienen una forma única de establecer un método una vez y dar acceso a cada objeto de esa clase a esos métodos, esto se llama prototype
+
+Cada clase tiene una propiedad prototype
+
+Veamos un ejemplo
+
+Function Usuario(nombre, GitHub) {
+  this.nombre = nombre;
+  This.github = GitHub;
+}
+
+Usuario.prototype.introduccion = function () {
+  Return 'Mi nombre es ' + this.nombre + ', mi usuario de GitHub es ' + this.github + '.';
+}
+
+Let Juan = new usuario('Juan', 'juan.perez');
+Let Antonio = new usuario('Antonio', 'atralice');
+
+Console.log(Juan.introduccion()); // Mi nombre es Juan, mi usuario de GitHub es juan.perez.
+
+
+
+Object.create
+Este método create nos permite crear un nuevo objeto a partir de un prototype especificado
+
+// creo un objeto con un objeto vacío como prototype
+> var obj = Object.create({})
+
+> obj
+< Object {}
+
+// creo un objeto a partir de un prototype de Objeto
+> var obj = Object.create(Object.prototype)
+// que es lo mismo que crear un objeto vacío literal
+> var obj {}
+
+
+Object.assign
+Este método de los objetos nos permite agregar propiedades a un objeto pasado por el parámetro
+
+> var obj = {}
+
+// no hace falta guardar el resultado porque los objetos se pasan por 'referencia'
+> Object.assign(obj, {nombre:'Emi', apellido:'Chequer'})
+
+> obj.nombre
+< 'Emi'
+
+
+
+
+Herencia clásica
+Cuando hacemos referencia a herencia nos referimos a la capacidad de que los objetos distintos puedan responder a un llamado igual de acuerdo a su propia naturaleza
+
+Cuando hablamos de polimorfismo nos referimos a la capacidad de que los objetos distintos puedan responder a un llamado igual de acuerdo a su naturaleza
+
+Herencia... objetos iguales
+Polimorfismo... objetos distintos
+Ambos responden a un llamado igual de acuerdo a su propia naturaleza
+
+
+
+Herencia en JavaSacript
+
+En JS a diferencia de la herencia clásica nos manejamos con prototipos, que van a tomar los métodos pasados por sus padres mediante la 'Prototype Chain'
+
+**todas las funciones constructoras comienzan con mayúscula
+
+Puedo colocar || cuando creo variables dentro de un objeto para que si no le coloco nada dentro de esa variable por defecto me arroje lo que definí
+Veamos ejemplo
+
+Function Car(marca, cv, color) {
+   Thi.marca = marca || 'audi';
+   This.cv = cv || 123;
+   This.color = || 'negro';
+  }
+
+> var renault = new Car()
+> Car { marca: 'audi', cv: 123, color 'negro' }
+
+Tabla de la verdad
+T || T = T
+T || F = T
+F || T = T
+F || T = F
+
+
+
+
+
+
+
