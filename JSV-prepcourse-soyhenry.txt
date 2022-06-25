@@ -1,3 +1,23 @@
+Function constructors /funciones constructoras
+Se usan para crear un objeto con variables adentro, así poder replicar esa clase que creamos con la función constructora en otra clase con las mismas variables
+
+Cuando decimos que estoy creando una función constructora nos referimos a que estoy creándooslos o una "plantilla" / clase de objetos para poder utilizar varias veces
+
+Todas las funciones constructoras deben comenzar con mayusculas
+
+function Persona () {
+  This.nombre = nombre,
+  this.apellido = apellido,
+  }
+
+New Juan = Persona ()
+> Persona { nombre: nombre, apellido: apellido }
+
+Clase + prototype 
+Clase tiene sus propios objetos, peri que pasa si cuando solicito una variable que justo en esa ocasión y en esa clase de objetos no se encuentra? va y la saca de prototype
+
+
+
 Clases
 Son utiles para crear muchos objetos que comparten algunas de las mismas propiedades y métodos (como los usuarios de un sitio web)
 
@@ -56,6 +76,14 @@ Console.log(Juan.introduccion()); // Mi nombre es Juan, mi usuario de GitHub es 
 
 
 
+O sea que las clases de objetos son como mas especificas que almacenan ejemplo el nombre de usuario y contraseña den usuario, pero con el prototype para no repetir la función de por ejemplo saludar en cada clase, lo agrego al prototype de usuario
+
+
+
+
+OTRO METODO ES OBJECT.CREATE/ASSIGN
+
+
 Object.create
 Este método create nos permite crear un nuevo objeto a partir de un prototype especificado
 
@@ -100,7 +128,9 @@ Herencia en JavaSacript
 
 En JS a diferencia de la herencia clásica nos manejamos con prototipos, que van a tomar los métodos pasados por sus padres mediante la 'Prototype Chain'
 
-**todas las funciones constructoras comienzan con mayúscula
+** todas las funciones constructoras comienzan con mayúscula
+** en JS si algo tiene 2 guiones es algo que no se tiene que tocar
+** metodo es una funcion dentro de un objeto
 
 Puedo colocar || cuando creo variables dentro de un objeto para que si no le coloco nada dentro de esa variable por defecto me arroje lo que definí
 Veamos ejemplo
@@ -120,6 +150,8 @@ T || F = T
 F || T = T
 F || T = F
 
+
+Clases ES6
 
 
 
