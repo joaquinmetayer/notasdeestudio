@@ -1,0 +1,30 @@
+Cuando pasamos una función como argumento a otra función recibe el nombre de CallBacks (Cb)
+
+Ejemplo
+
+Function decirHolaAlUsuario(usuario) {
+  Return "Hola " + usuario + "!";
+  }
+Function decirAdiosAlUsuario(usuario) {
+  Return "Adios " + usuario + "!";
+  }
+Function crearSaludo(usuario, cb) {
+  Return cb(usuario);
+  }
+
+crearSaludo("Dan", decirHolaAlUsuario): // Hola Dan!
+
+
+
+Mas arrays
+
+.foreach
+Me ayuda a iterar entre cada elemento del array pero sin tener que usar un bucle for
+
+
+.map
+Devuelve un arreglo
+
+.reduce
+Devuelve un solo valor
+Por defecto el acumulador es cero
