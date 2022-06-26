@@ -23,7 +23,7 @@ Me ayuda a iterar entre cada elemento del array pero sin tener que usar un bucle
 
 
 .map
-Devuelve un arreglo
+Devuelve un arreglo nuevo
 
 .reduce
 Devuelve un solo valor
