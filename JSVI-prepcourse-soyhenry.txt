@@ -1,5 +1,7 @@
 Cuando pasamos una función como argumento a otra función recibe el nombre de CallBacks (Cb)
 
+El callback recibe algo (argumento) y con ese algo debe hacer una función ya definida anteriormente como callback
+
 Ejemplo
 
 Function decirHolaAlUsuario(usuario) {
@@ -28,3 +30,10 @@ Devuelve un arreglo nuevo
 .reduce
 Devuelve un solo valor
 Por defecto el acumulador es cero
+
+------
+Homework
+
+Un callback es cuando pasamos como argumento de una función una función dentro de ella
+
+
