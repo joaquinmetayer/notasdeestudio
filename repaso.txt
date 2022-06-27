@@ -1,6 +1,0 @@
-expresiones son palabras que dan una informacion
-statement realiza una accion
-expresiones con efecto secundario++
-conditional statement es cuando se le da una forma para calcular... una condicion
-statement declaration utiliza una funcion y variable
-loops son los bucles y jumps
