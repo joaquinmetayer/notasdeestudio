@@ -1,5 +1,5 @@
 
-JavaScript is a scripting language you can use to make web pages interactive. It is one of the core technologies of the web, along with HTML and CSS, and is supported by all modern browsers.
+/* JavaScript is a scripting language you can use to make web pages interactive. It is one of the core technologies of the web, along with HTML and CSS, and is supported by all modern browsers.
 
 In this course, you'll learn fundamental programming concepts in JavaScript. You'll start with basic data structures like numbers and strings. Then you'll learn to work with arrays, objects, functions, loops, if/else statements, and more.
 
@@ -16,7 +16,7 @@ You can make a multi-line comment beginning with /* and ending with */. This is 
 
 /* This is a
 multi-line comment */
-NOTE: As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.
+/* NOTE: As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.
 
 ----------------------------
 Declare JavaScript Variables
@@ -1685,3 +1685,4 @@ We have defined a function named rangeOfNumbers with two parameters. The functio
 function rangeOfNumbers(startNum, endNum) {
     return [];
   };
+  */
