@@ -531,7 +531,7 @@ arr[3] is [[10, 11, 12], 13, 14], arr[3][0] is [10, 11, 12], and arr[3][0][1] is
 
 Note: There shouldn't be any spaces between the array name and the square brackets, like array [0][0] and even this array [0] [0] is not allowed. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
 
-------------------------------------------------------
+-----------------------------
 Manipulate Arrays With push()
 An easy way to append data to the end of an array is via the push() function.
 
