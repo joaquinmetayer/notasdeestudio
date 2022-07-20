@@ -462,7 +462,7 @@ const firstName = "Augusta";
 const thirdToLastLetter = firstName[firstName.length - 3];
 thirdToLastLetter would have a value of the string s.
 
-------------------------------------------------------
+-----------
 Word Blanks
 You are provided sentences with some missing words, like nouns, verbs, adjectives and adverbs. You then fill in the missing pieces with words of your choice in a way that the completed sentence makes sense.
 
@@ -478,7 +478,7 @@ You start an array declaration with an opening square bracket, end it with a clo
 
 const sandwich = ["peanut butter", "jelly", "bread"];
 
-------------------------------------------------------
+------------------------------------
 Nest one Array within Another Array
 You can also nest arrays within other arrays, like below:
 
