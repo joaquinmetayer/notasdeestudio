@@ -485,7 +485,7 @@ You can also nest arrays within other arrays, like below:
 const teams = [["Bulls", 23], ["White Sox", 45]];
 This is also called a multi-dimensional array.
 
-------------------------------------------------------
+------------------------------
 Access Array Data with Indexes
 We can access the data inside arrays using indexes.
 
